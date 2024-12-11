@@ -1,0 +1,14 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.MainPage">
+    <StackLayout Padding="20">
+        <Entry Placeholder="Enter first number" Text="{Binding Input1}" Keyboard="Numeric" />
+        <Entry Placeholder="Enter second number" Text="{Binding Input2}" Keyboard="Numeric" />
+        <Button Text="Add" Command="{Binding AddCommand}" />
+        <Button Text="Subtract" Command="{Binding SubtractCommand}" />
+        <Button Text="Multiply" Command="{Binding MultiplyCommand}" />
+        <Button Text="Divide" Command="{Binding DivideCommand}" />
+        <Label Text="Result:" FontSize="Medium" />
+        <Label Text="{Binding Result}" FontSize="Large" />
+    </StackLayout>
+</ContentPage>
